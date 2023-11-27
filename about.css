@@ -1,0 +1,42 @@
+.content {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: 100vh; /* Set the height to 100% of the viewport */
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    section {
+        margin: 20px;
+    }
+    
+    h1 {
+        color: black;
+    }
+    
+    p {
+        line-height: 1.6;
+        color: black;
+    }
+  }
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/ai-logo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.3; /* Set the opacity to 0.5 */
+}
+header {
+    /* background-color: #ffffff; */
+    color: #000000; /* Chuyển màu chữ về đen */
+    padding: 1em;
+    text-align: center;
+    align-content: center;;
+}

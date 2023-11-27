@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Trò chuyện</title>
+
+    <link rel="stylesheet" href="./css/chat.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <div class="addchat">
+          <a href="index.html"><img class="logo" src="./img/ai-logo.png" alt="" /></a>
+          <h2>Tin nhắn</h2>
+          <button id="createChatButton" class="fa-regular fa-pen-to-square fa-xl"></button>
+          <div id="chatContainer"></div>
+        </div>
+
+        <div class="listview">
+          <ul>
+            <li>
+              <p>Đoạn chat 1</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 2</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 3</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 4</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 5</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 6</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 7</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 8</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 9</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+            <li>
+              <p>Đoạn chat 10</p>
+              <button><i class="fa-solid fa-trash icon"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="account">
+          <img class="avatar" src="./img/ai-logo.png" alt="" />
+          <h2>Tên tài khoản</h2>
+          <div class="dropdown">
+            <button class="custom-button" id="dropdownBtn" onclick="toggleDropdown()">≡</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#" id="logoutLink">Đăng xuất</a>
+              <a href="./history.html">Lịch sử trò chuyện</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="chat-content"></div>
+        <div class="chat-box">
+          <div class="chat">
+            <input
+              type="text"
+              id="message-input"
+              placeholder="Nhập tin nhắn..."
+            />
+            <button class="send-button">Gửi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="deleteModal">
+      <div class="modal-content">
+        <p><b>Bạn có chắc muốn xóa đoạn chat không?</b></p>
+        <button id="confirmDelete"><b>Xác nhận</b></button>
+        <button id="cancelDelete"><b>Hủy</b></button>
+      </div>
+    </div>    
+    <script src="./javascript/chat.js"></script>
+  </body>
+</html>
